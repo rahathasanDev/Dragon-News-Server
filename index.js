@@ -8,6 +8,11 @@ const categories = require('./Data/Categories.json');
 app.use(cors());
 app.use(express.json());
 
+
+// must needed
+// app.use(cors());
+// app.use(express.json());
+
 app.get('/categories', (req, res) => {
   res.send(categories);
 })
